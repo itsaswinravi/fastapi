@@ -14,7 +14,7 @@ from .config import settings
 # pwd_context= CryptContext(schemes=["bcrypt"], deprecated=" auto")
              
 # models.Base.metadata.create_all(bind=engine)
-origins = ["https://www.google.com"]
+origins = ["*"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
@@ -32,7 +32,7 @@ app.include_router(vote .router)
 
 @app.get("/")
 def root():
-    return {"message": "welcome to my api!"}
+    return {"message": "welcome to my api"}
 
 
 
