@@ -1,0 +1,2 @@
+- if you change the .env file, 
+    - you need to kill the terminal and run the app in new terminal for the new env variables to come into effect
